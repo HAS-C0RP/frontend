@@ -1,0 +1,29 @@
+<ul>
+    <li *ngFor="let article of articles">
+        <a routerLink="/article/{{article.id}}">
+            <div>
+                <div></div>
+                <div class="author">by {{article.author}}</div>
+            </div>
+            <img [src]="article.imageUrl" [alt]="article.author"/>
+            <div class="content">
+                <p>{{article.author}}</p>
+            </div>
+            <div>
+                <ul>
+                    <li *ngFor="let tag of article.tag">{{ tag }}</li>
+                </ul>
+            </div>
+            <div>
+                <p>publié le : {{ article.date | date:'dd/MM/yyyy HH:mm' }}</p>
+            </div>
+        </a>
+    </li>
+</ul>
+<!-- id:'1',
+        author:'jean-michelle lesbabine',
+        content:'blablabla',
+        imageUrl:'assets/img-1.jpg',
+        date: new Date('2019-11-05T15:30:00Z'),
+        tag:['tech','dev'],
+        likeCount:0, -->
