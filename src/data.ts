@@ -1,4 +1,5 @@
 import { Article } from "./app/shared/models/Article";
+import { Tag } from "./app/shared/models/Tag";
 
 export const sample_article: Article[] = [
     {
@@ -31,4 +32,11 @@ export const sample_article: Article[] = [
         tag:['tech','css'],
         likeCount:0,
     },
+]
+
+const sample_tags:Tag[] = [
+    { name: 'All', count: 3},
+    { name: 'Angular', count: 3},
+    { name: 'Html', count: 3},
+    { name: 'Symfony', count: 3},
 ]
