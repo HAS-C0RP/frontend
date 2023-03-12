@@ -12,4 +12,9 @@ export class ArticleService {
   getAll():Article[]{
     return sample_article;
   }
+
+  getAllArticleBySearchTerm(searchTerm:string){
+    
+    return this.getAll().filter(article => article.title.toLowerCase().includes(searchTerm.toLowerCase()))
+  }
 }

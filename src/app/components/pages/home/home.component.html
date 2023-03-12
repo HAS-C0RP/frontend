@@ -1,15 +1,16 @@
+<app-search></app-search>
 <ul>
     <li *ngFor="let article of articles">
         <a routerLink="/article/{{article.id}}">
             <div>
-                <div></div>
+                <h2>{{article.title}}</h2>
                 <div class="author">by {{article.author}}</div>
             </div>
             <img [src]="article.imageUrl" [alt]="article.author"/>
             <div class="content">
                 <p>{{article.author}}</p>
             </div>
-            <div>
+            <div class="">
                 <ul>
                     <li *ngFor="let tag of article.tag">{{ tag }}</li>
                 </ul>

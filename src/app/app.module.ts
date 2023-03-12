@@ -10,6 +10,7 @@ import { AddArticleComponent } from './user/add-article/add-article.component';
 import { ModifyArticleComponent } from './user/modify-article/modify-article.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { SearchComponent } from './components/partials/search/search.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './components/pages/home/home.component';
     AddArticleComponent,
     ModifyArticleComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { Article } from "./app/shared/models/Article";
 export const sample_article: Article[] = [
     {
         id:'1',
+        title:'html technique',
         author:'jean-michelle lesbabine',
         content:'blablabla',
         imageUrl:'assets/img-1.jpg',
@@ -12,6 +13,7 @@ export const sample_article: Article[] = [
     },
     {
         id:'2',
+        title:'angula et son impact',
         author:'Gerard menvuca',
         content:'chingchangtopochingzang',
         imageUrl:'assets/img-2.jpg',
@@ -21,6 +23,7 @@ export const sample_article: Article[] = [
     },
     {
         id:'3',
+        title:'symfony le chef dorchestre',
         author:'Gaara jabyte',
         content:'sablesableselsalble',
         imageUrl:'assets/img-3.jpg',
